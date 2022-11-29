@@ -1,0 +1,59 @@
+.divFilter {
+    margin: 2rem auto;
+    width: 50rem;
+    height: 2rem;
+}
+
+.divFilter input {
+    border-radius: 8px;
+    border: none;
+    font-size: 1.6rem;
+    padding-top: auto;
+    padding-left: 1rem;
+    background-color: var(--blue-100);
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin: 1rem auto;
+    border-radius: 8px;
+    width: 50rem;
+    background-color: var(--blue-200);
+}
+
+.contentList {
+    padding: 1.6rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+li {
+    padding-top: 1rem;
+    transition: all .2s;
+    text-align: center;
+    height: 5rem;
+    background-color: var(--blue-100);
+    border-radius: 8px;
+    list-style: none;
+}
+
+li strong {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--white-500);
+}
+
+li p {
+    margin-top: 10px;
+    color: var(--white-300);
+}
+
+ul:has(li:hover) li:not(:hover) {
+    opacity: 0.6;
+    scale: .98;
+}

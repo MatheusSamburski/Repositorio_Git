@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    padding: 0 2rem;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.usuario {
+    border: 1px solid var(--white-300);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.divUsuario {
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    background-color: var(--blue-700);
+    border: 1px solid var(--blue-500);
+    align-items: center;
+}
+
+.divUsuario strong{
+    font-size: 2rem;
+    color: var(--white-900);
+}
+
+.logotipo {
+    margin-right: 7rem;
+}

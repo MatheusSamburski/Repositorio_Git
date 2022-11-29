@@ -1,0 +1,24 @@
+:root {
+    --white-900: #E7EDF4;
+    --white-700: #C4D4E3;
+    --white-500: #AFC2D4;
+    --white-300: #7B96B2;
+
+    --blue-900: #3294F8;
+    --blue-700: #0B1B2B;
+    --blue-500: #112131;
+    --blue-200: #1C2F41;
+    --blue-100: #040F1A;
+    
+    --background: #071422;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+}
