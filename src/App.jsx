@@ -1,15 +1,22 @@
-import { useEffect, useState } from 'react';
-import { Header } from './components/Header/header';
-import { Main } from './components/Header/Main/main';
-
+import { Section } from './components/Section/section';
+import { Main } from './components/Main/main';
+import styles from "./App.module.css";
+import { SearchProvider } from './context/Search';
 import "./global.css"
+import { Header } from './components/Header/header';
+
 
 export function App() {
 
   return (
-    <div>
+    <>
       <Header />
-      <Main />
-    </div>
+      <div className={styles.content}>
+        <SearchProvider>
+          <Section />
+          <Main />
+        </SearchProvider>
+      </div>
+    </>
   )
 }
