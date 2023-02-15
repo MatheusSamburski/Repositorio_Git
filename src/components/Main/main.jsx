@@ -16,11 +16,14 @@ export function Main() {
             })
     }
 
+    function handleGoToRepository (name) {
+        window.location.href= `https://github.com/MatheusSamburski/${name}`;
+    }
+
     return (
         <div>
             <div className={styles.divFilter}>
-                <label for="filter" class="sr-only"></label>
-                <input id="filter" type="text" placeholder="Filter" onChange={event => setSearch(event.target.value)} />
+                <input type="text" placeholder="Filter" onChange={event => setSearch(event.target.value)} />
                 <button onClick={handleSearch}>Buscar</button>
             </div>
 
@@ -31,7 +34,7 @@ export function Main() {
                         <>
                             {repositories.map(repo => {
                                 return (
-                                    <li key={repo.full_name}>
+                                    <li key={repo.full_name} onClick={() => handleGoToRepository(repo.name)}>
                                         <strong>{repo.full_name}</strong>
                                         <p>{repo.description}</p>
                                     </li>

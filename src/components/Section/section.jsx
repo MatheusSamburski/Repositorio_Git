@@ -22,7 +22,7 @@ export function Section() {
             {displayList
                 ?
                 <>
-                    <img src={caracteries.avatar_url} alt="Imagem de Usuário" className={styles.usuario} />
+                    <img src={caracteries.avatar_url } alt="Imagem de Usuário" className={styles.usuario} />
                     <strong>{caracteries.name}</strong>
                     <div className={styles.infoUser}>
                         <span>{caracteries.company}</span>
