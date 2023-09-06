@@ -1,0 +1,25 @@
+.divFilter {
+  margin: 2rem auto;
+  width: 50rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divFilter input {
+  border-radius: 8px;
+  border: none;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  background-color: var(--blue-100);
+  width: 80%;
+  height: 100%;
+  color: white;
+}
+
+.divFilter button {
+  border: none;
+  border-radius: 8px;
+  color: black;
+  width: 70px;
+}

@@ -1,0 +1,47 @@
+nav {
+  border-radius: 8px;
+  width: 50rem;
+  background-color: var(--blue-200);
+}
+
+.contentList {
+  padding: 1.6rem;
+}
+
+.contentList span {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+li {
+  padding-top: 1rem;
+  transition: all 0.2s;
+  text-align: center;
+  height: 5rem;
+  background-color: var(--blue-100);
+  border-radius: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+
+li strong {
+  text-decoration: underline;
+  color: var(--white-500);
+}
+
+li p {
+  margin-top: 10px;
+  color: var(--white-300);
+}
+
+ul:has(li:hover) li:not(:hover) {
+  opacity: 0.6;
+  scale: 0.98;
+}

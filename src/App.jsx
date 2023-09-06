@@ -1,22 +1,15 @@
-import { Section } from './components/Section/section';
-import { Main } from './components/Main/main';
+import { Main } from "./components/Main/main";
+import { Header } from "./components/Header/header";
 import styles from "./App.module.css";
-import { SearchProvider } from './context/Search';
-import "./global.css"
-import { Header } from './components/Header/header';
-
+import "./global.css";
 
 export function App() {
-
   return (
     <>
       <Header />
       <div className={styles.content}>
-        <SearchProvider>
-          <Section />
-          <Main />
-        </SearchProvider>
+        <Main />
       </div>
     </>
-  )
+  );
 }
